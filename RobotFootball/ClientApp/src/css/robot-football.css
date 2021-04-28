@@ -1,0 +1,193 @@
+﻿body {
+    margin: 0;
+    background-color: green;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.game-container {
+    color: white;
+    font-family: Verdana, sans-serif;
+}
+
+.game-container .header {
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.game-container .header .scores {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.game-container .header .scores .score-container .score {
+    color: blue;
+}
+
+.game-container .header .scores .score-container .score.opponent {
+    color: red;
+}
+
+.game-container .field-container {
+    padding: 20px;
+    background-color: forestgreen;
+}
+
+.game-container .field-container .field-inner-container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.game-container .field-container .field-inner-container .field {
+    position: relative;
+    padding-top: min(68.181818%, calc(100vh - 172px));
+    border: 3px solid white;
+}
+
+.game-container .field-container .field-inner-container .field .goal::before {
+    content: '';
+    position: absolute;
+    top: 37.7866%;
+    left: 0;
+    height: 24.4267%;
+    width: 5%;
+    border: 3px solid white;
+    border-left: none;
+}
+
+.game-container .field-container .field-inner-container .field .goal::after {
+    content: '';
+    position: absolute;
+    top: 37.7866%;
+    right: 0;
+    height: 24.4267%;
+    width: 5%;
+    border: 3px solid white;
+    border-right: none;
+}
+
+.game-container .field-container .field-inner-container .field .goal-bar::before {
+    content: '';
+    position: absolute;
+    top: 45.12%;
+    left: -5px;
+    height: 9.76%;
+    width: 7px;
+    background-color: gray;
+    border-radius: 3px;
+}
+
+.game-container .field-container .field-inner-container .field .goal-bar::after {
+    content: '';
+    position: absolute;
+    top: 45.12%;
+    right: -5px;
+    height: 9.76%;
+    width: 7px;
+    background-color: gray;
+    border-radius: 3px;
+}
+
+.game-container .field-container .field-inner-container .field .penalty-spot::before {
+    content: '';
+    position: absolute;
+    bottom: 49.666667%;
+    left: 9.7727275%;
+    width: 0.454545%;
+    height: 0.666667%;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.game-container .field-container .field-inner-container .field .penalty-spot::after {
+    content: '';
+    position: absolute;
+    bottom: 49.666667%;
+    left: 89.772728%;
+    width: 0.454545%;
+    height: 0.666667%;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.game-container .field-container .field-inner-container .field .penalty-area::before {
+    content: '';
+    position: absolute;
+    top: 23.133333%;
+    left: 0;
+    height: 53.733333%;
+    width: 15%;
+    background-color: forestgreen;
+    border: 3px solid white;
+    border-left: none;
+}
+
+.game-container .field-container .field-inner-container .field .penalty-area::after {
+    content: '';
+    position: absolute;
+    top: 23.133333%;
+    right: 0;
+    height: 53.733333%;
+    width: 15%;
+    background-color: forestgreen;
+    border: 3px solid white;
+    border-right: none;
+}
+
+.game-container .field-container .field-inner-container .field .penalty-arc::before {
+    content: '';
+    position: absolute;
+    bottom: 35.333333%;
+    left: 0;
+    width: 20%;
+    height: 29.333333%;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+.game-container .field-container .field-inner-container .field .penalty-arc::after {
+    content: '';
+    position: absolute;
+    bottom: 35.333333%;
+    right: 0;
+    width: 20%;
+    height: 29.333333%;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+.game-container .field-container .field-inner-container .field .center-line {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 49.953%;
+    width: 0;
+    height: 100%;
+    border: 3px solid white;
+    border-right: none;
+}
+
+.game-container .field-container .field-inner-container .field .center::before {
+    content: '';
+    position: absolute;
+    bottom: 37.8%;
+    left: 41.681818%;
+    width: 16.636364%;
+    height: 24.4%;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+.game-container .field-container .field-inner-container .field .center::after {
+    content: '';
+    position: absolute;
+    bottom: 49.666667%;
+    left: 49.7727275%;
+    width: 0.454545%;
+    height: 0.666667%;
+    background-color: white;
+    border-radius: 50%;
+}

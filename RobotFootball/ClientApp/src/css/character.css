@@ -1,0 +1,16 @@
+﻿.character {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.character.player {
+    background-color: blue;
+}
+
+.character.opponent {
+    background-color: red;
+}
+
+ .character.ball {
+    background-color: black;
+}
